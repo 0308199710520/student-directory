@@ -15,4 +15,10 @@ students = [
 
 numStudents = students.length()
 
+def printStudents(studentArray)
+  studentArray.each |student|
+    p student
+  end
+end
+
 p numStudents
