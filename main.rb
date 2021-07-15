@@ -13,8 +13,8 @@ students = [
 ]
 
 def printStudents(studentArray)
-  studentArray.each do |student|
-    p "#{student[:name]}, #{student[:cohort]} cohort"
+  studentArray.each_with_index do |student, index|
+    p "#{index}: #{student[:name]}, #{student[:cohort]} cohort"
   end
 end
 
