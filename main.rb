@@ -18,6 +18,23 @@ def printStudents(studentArray)
   end
 end
 
+def input_students
+  students = []
+
+  puts "Please enter the names of the students"
+  puts "To finish, just hit return twice"
+  
+  name = gets.chomp
+
+  while !name.empty? do
+    students << {name: name, cohort: :november}
+    puts "Now we have #{students.count} students"
+    name = gets.chomp
+  end
+
+  return students
+end
+
 def footer(studentArray)
   if studentArray.length == 1
     p" overall we have 1 excellent student"
