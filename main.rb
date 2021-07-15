@@ -55,3 +55,19 @@ def startingLetterPrint(studentArray, letter)
       puts student[:name]
     end
   end
+
+def lengthPrint(studentArray, lengthOfName)
+  studentArray.each do |student|
+    if student[:name].length == lengthOfName
+    puts student[:name]
+  end
+end
+
+def printWithEach(studentArray)
+  x = 0
+  while x < studentArray.length
+    puts studentArray[x][:name]
+    x += 1
+  end
+end
+
