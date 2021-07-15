@@ -46,3 +46,4 @@ end
 def header
   p "Welcome to the VILLANs academy"
   p "------------------------------"
+end
