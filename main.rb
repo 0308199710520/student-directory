@@ -47,3 +47,11 @@ def header
   p "Welcome to the VILLANs academy"
   p "------------------------------"
 end
+
+
+def startingLetterPrint(studentArray, letter)
+  studentArray.each do |student|
+    if student[:name][0] == letter
+      puts student[:name]
+    end
+  end
